@@ -13,6 +13,7 @@
 
 <script>
 import RepoCard from '@/components/RepoCard.vue';
+
 export default {
   components: { RepoCard },
   name: "HomeView",
