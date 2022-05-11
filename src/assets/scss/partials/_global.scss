@@ -1,0 +1,12 @@
+body,
+html,
+#app {
+    font-family: $font-family;
+    height: 100%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
