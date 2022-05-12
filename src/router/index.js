@@ -7,6 +7,11 @@ const routes = [
     name: 'home',
     component: HomeView
   },
+  {
+    path: '/:language',
+    name: 'home-with-param',
+    component: HomeView
+  },
 ]
 
 const router = createRouter({

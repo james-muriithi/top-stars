@@ -37,13 +37,11 @@ export default {
     return {
       error: "",
       loading: false,
+      language: "javascript",
       repos: [],
     };
   },
   computed: {
-    language() {
-      return "javascript";
-    },
     monthAgoDate() {
       return formatDate(monthAgo);
     },
@@ -51,6 +49,9 @@ export default {
   async created() {
     this.loading = true;
     this.error = "";
+    if (this.$route.params.language) {
+      this.language = this.$route.params.language
+    }
     try {
       this.repos =
         (await fetchRepoWithMostStars(this.language)).data.items || [];
