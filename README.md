@@ -1,13 +1,17 @@
 # Top Stars
 This project fetches from github api three repositories with the most stars in the last month and displays them
 
+## Demo
+1. https://most-stars.web.app/ - home page (default language javascript)
+
+1. https://most-stars.web.app/:language - dynamic route for languages
+
+## Design
+https://www.figma.com/file/wK2nQCr7ywb4eSDgJem8Td/Untitled?node-id=0%3A1
 ## Project setup
 ```
 npm install
 ```
-## Design
-https://www.figma.com/file/wK2nQCr7ywb4eSDgJem8Td/Untitled?node-id=0%3A1
-
 ## Todo
 - [x] Build the UI
 - [x] separate the component to be reused
