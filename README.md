@@ -5,6 +5,8 @@ This project fetches from github api three repositories with the most stars in t
 ```
 npm install
 ```
+## Design
+https://www.figma.com/file/wK2nQCr7ywb4eSDgJem8Td/Untitled?node-id=0%3A1
 
 ## Todo
 - [x] Build the UI
@@ -12,7 +14,7 @@ npm install
 - [x] fetch repos with axios
 - [x] add preloaders
 - [x] show errors
-- [ ] add e2e testing
+- [x] add e2e testing
 - [x] add ci/cd
 - [x] deploy to firebase
 
@@ -36,5 +38,5 @@ npm run lint
 npm run lint:fix
 ```
 
-### licence
+### Licence
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
