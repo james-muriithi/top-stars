@@ -1,5 +1,5 @@
 <template>
-  <div class="repo-card bg-white p-3 p-md-4">
+  <div class="shadow bg-white p-3 p-md-4">
     <a :href="repo.html_url" target="_blank" rel="noopener noreferrer">
       {{repo.full_name}}
     </a>
@@ -36,9 +36,3 @@ export default {
   }
 };
 </script>
-
-<style lang="scss" scoped>
-.repo-card {
-  box-shadow: 0px 10px 35px -3px rgba(0, 0, 0, 0.05);
-}
-</style>
