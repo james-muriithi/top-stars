@@ -6,6 +6,9 @@
     </p>
 
     <div class="pt-4">
+      <div v-if="error" class="alert alert-danger" role="alert">
+        {{ error }}
+      </div>
       <div v-if="!loading">
         <RepoCard
           v-for="repo in repos"
@@ -50,16 +53,16 @@ export default {
     this.loading = true;
     this.error = "";
     if (this.$route.params.language) {
-      this.language = this.$route.params.language
+      this.language = this.$route.params.language;
     }
     try {
       this.repos =
         (await fetchRepoWithMostStars(this.language)).data.items || [];
     } catch (_) {
       this.error =
-        "There was error loading the repositories, please try again later";
+        "There was error loading the repositories, please try again later.";
     } finally {
-      this.loading = false
+      this.loading = false;
     }
   },
 };

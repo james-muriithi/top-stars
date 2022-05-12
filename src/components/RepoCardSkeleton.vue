@@ -2,7 +2,7 @@
   <div class="loading-skeleton">
     <div class="row bg-white shadow p-3 p-md-4">
       <p class="h-10"></p>
-      <p class="description mt-3 h-20"></p>
+      <p class="loading-skeleton__description mt-3 h-20"></p>
       <div class="row g-0">
         <div class="col text-start">
           <p class="text-muted mb-0 h-15 w-75"></p>

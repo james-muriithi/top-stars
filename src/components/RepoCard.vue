@@ -1,9 +1,9 @@
 <template>
-  <div class="shadow bg-white p-3 p-md-4">
+  <div class="shadow bg-white p-3 p-md-4 repo-card">
     <a :href="repo.html_url" target="_blank" rel="noopener noreferrer">
       {{repo.full_name}}
     </a>
-    <p class="description mt-3">
+    <p class="repo-card__description mt-3">
       {{repo.description}}
     </p>
     <div class="row">
