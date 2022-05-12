@@ -1,13 +1,13 @@
-import axios from "@/plugins/axios"
+import moment from "moment";
+import axios from "@/plugins/axios";
 
 const searchEndpoint = '/search/repositories';
 const perPage = 3;
 
+const monthAgo = moment().subtract(1, 'month').format('YYYY-MM-DD')
+
 function getCreatedQuery() {
-    const today = new Date()
-    today.setMonth(today.getMonth() - 1)
-    const date = today.toISOString().split('T')[0]
-    return `created:>${date}`
+    return `created:>${monthAgo}`
 }
 
 async function fetchRepoWithMostStars(language) {
@@ -20,7 +20,13 @@ async function fetchRepoWithMostStars(language) {
     });
 }
 
+function formatDate(date){
+    return moment(date).format("Do MMMM, YYYY");
+}
+
 
 export {
-    fetchRepoWithMostStars
+    fetchRepoWithMostStars,
+    formatDate,
+    monthAgo
 }

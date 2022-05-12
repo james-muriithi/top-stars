@@ -2,7 +2,7 @@
   <div class="home mt-5">
     <h3 class="fw-bold mb-2">Most stars: '{{ language }}'</h3>
     <p>
-      <i> Repos created since 1st may 2022 </i>
+      <i> Repos created since {{monthAgoDate}} </i>
     </p>
 
     <div class="pt-4">
@@ -13,7 +13,7 @@
 
 <script>
 import RepoCard from '@/components/RepoCard.vue';
-import { fetchRepoWithMostStars } from "@/utils/functions";
+import { fetchRepoWithMostStars, formatDate, monthAgo } from "@/utils/functions";
 
 export default {
   components: { RepoCard },
@@ -29,6 +29,9 @@ export default {
     language() {
       return "javascript";
     },
+    monthAgoDate(){
+      return formatDate(monthAgo)
+    }
   },
   async created(){
     this.loading = true;

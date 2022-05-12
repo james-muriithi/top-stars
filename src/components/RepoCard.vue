@@ -8,7 +8,7 @@
     </p>
     <div class="row">
       <div class="col">
-        <p class="text-muted mb-0">Created on {{repo.created_at}}</p>
+        <p class="text-muted mb-0">Created: {{formatDate(repo.created_at)}}</p>
       </div>
       <div class="col d-flex">
         <span class="d-flex justify-content-center ms-auto">
@@ -21,6 +21,8 @@
 </template>
 
 <script>
+import { formatDate } from "@/utils/functions";
+
 export default {
   name: "RepoCard",
   props: {
@@ -28,6 +30,9 @@ export default {
       type: Object,
       required: true
     }
+  },
+  methods: {
+    formatDate
   }
 };
 </script>
