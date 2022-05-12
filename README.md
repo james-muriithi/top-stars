@@ -11,10 +11,10 @@ npm install
 - [x] separate the component to be reused
 - [x] fetch repos with axios
 - [x] add preloaders
-- [*] show errors
+- [x] show errors
 - [ ] add e2e testing
-- [ ] add ci/cd
-- [ ] deploy to firebase
+- [x] add ci/cd
+- [x] deploy to firebase
 
 ### Compiles and hot-reloads for development
 ```

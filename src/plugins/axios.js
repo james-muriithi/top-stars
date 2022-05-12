@@ -1,4 +1,4 @@
-// import Vue from 'vue';
+import "es6-promise/auto";
 import axios from "axios";
 
 const config = {
