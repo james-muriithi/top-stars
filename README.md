@@ -10,7 +10,7 @@ npm install
 - [x] Build the UI
 - [x] separate the component to be reused
 - [x] fetch repos with axios
-- [ ] add preloaders
+- [x] add preloaders
 - [ ] show errors
 - [ ] add e2e testing
 - [ ] add ci/cd
